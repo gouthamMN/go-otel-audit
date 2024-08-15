@@ -30,7 +30,8 @@ import (
 
 	"github.com/microsoft/go-otel-audit/audit/msgs"
 
-	"github.com/go-json-experiment/json"
+	"encoding/json"
+
 	"github.com/vmihailenco/msgpack/v4"
 )
 
