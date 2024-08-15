@@ -6,7 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-json-experiment/json"
+	"encoding/json"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/vmihailenco/msgpack/v4"
@@ -334,7 +335,7 @@ func TypeMarshalUnmarshalJSON[T ~uint16](t *testing.T, length int) {
 
 		// Unmarshal
 		var got T
-		mt := any((&got)).(json.UnmarshalerV1)
+		mt := any((&got)).(json.Unmarshaler)
 
 		err = mt.UnmarshalJSON(data)
 		if err != nil {

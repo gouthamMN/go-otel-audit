@@ -1,8 +1,6 @@
 module github.com/microsoft/go-otel-audit
 
-go 1.22.1
-
-toolchain go1.22.4
+go 1.21.11
 
 require (
 	github.com/go-json-experiment/json v0.0.0-20240418180308-af2d5061e6c2
