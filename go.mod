@@ -1,6 +1,8 @@
 module github.com/microsoft/go-otel-audit
 
-go 1.21.11
+go 1.21.3
+
+toolchain go1.22.5
 
 require (
 	github.com/kylelemons/godebug v1.1.0
